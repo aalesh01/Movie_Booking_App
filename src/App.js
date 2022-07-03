@@ -20,7 +20,7 @@ function App() {
         <Route path='/' element={isAuth ? <Homepage /> : <Login />} />
         <Route path='/bookings' element={isAuth ? <Bookings /> : <Login />} />
         <Route path='/login' element={<Login />} />
-        <Route path='/moviedetails/:id' element={<MovieDetails />} />
+        <Route path='/moviedetails/:id' element={<MovieDetails/>} />
       </Routes>
     </ChakraProvider>
   );

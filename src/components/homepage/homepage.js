@@ -9,7 +9,7 @@ const Homepage = () => {
 
     useEffect(() => {
         const getData = async () => {
-            await fetch(`http://localhost:3000/movies`)
+            await fetch(`http://localhost:8080/movies`)
                 .then(res => res.json())
                 .then(res => setData(res))
         }
